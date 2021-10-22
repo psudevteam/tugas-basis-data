@@ -1,0 +1,34 @@
+/*Start Header Section*/
+
+/* Import Navbar */
+@import "./header/navbar/index.css";
+
+/* Import Sidebar */
+@import "./header/sidebar/index.css";
+
+/*End Header Section*/
+
+/* Start Main Section */
+
+/* Import Banner */
+@import "./main/banner/index.css";
+
+/* Import Table */
+@import "./main/table/index.css";
+
+/* Import Breadcrumb */
+@import "./main/breadcumb/index.css";
+
+/* End Main Section */
+
+/* Start Footer Section */
+
+/* Import Footer */
+@import "./footer/index.css";
+
+/* End Footer Section */
+
+#main-area {
+  margin-left: 8rem;
+  padding: 1rem;
+}
