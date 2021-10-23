@@ -1,0 +1,8 @@
+/* Import Global */
+@import "./global/index.css";
+
+/* Import Variable */
+@import "./variable/index.css";
+
+/* Import Component */
+@import "./components/index.css";

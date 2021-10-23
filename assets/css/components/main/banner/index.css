@@ -1,0 +1,25 @@
+#banner-area {
+  display: none;
+}
+
+.banner-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-text {
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+  font-family: var(--roboto);
+  font-weight: 700;
+}
+
+.banner-title {
+  font-size: 7rem;
+  color: var(--blue-800);
+}
+
+.banner-img img {
+  max-width: 70rem;
+}

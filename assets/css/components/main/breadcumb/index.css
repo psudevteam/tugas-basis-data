@@ -1,0 +1,11 @@
+.breadcumb {
+  width: 99%;
+  height: var(--s);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  color: white;
+  font-family: var(--roboto);
+  background-color: var(--blue-400);
+}
