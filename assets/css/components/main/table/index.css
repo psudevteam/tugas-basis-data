@@ -43,3 +43,24 @@ td:hover {
   color: var(--blue-600);
   font-weight: bold;
 }
+
+.table-btn {
+  border: none;
+  width: 3rem;
+  height: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+
+.edit {
+  background-color: var(--green-300);
+  color: white;
+  font-weight: 700;
+}
+
+.delete {
+  background-color: var(--red-400);
+  color: white;
+  font-weight: 700;
+}

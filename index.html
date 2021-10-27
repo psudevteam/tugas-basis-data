@@ -11,7 +11,7 @@
     <header id="head-area">
       <nav class="navbar">
         <div class="nav-wrap">
-          <div class="nav-logo">
+          <div class="nav-logo" onclick="getHome()">
             <h1 class="nav-brand">PSU University | 2021</h1>
           </div>
         </div>
@@ -33,7 +33,7 @@
     <aside id="sidebar-area">
       <div class="sidebar-wrap">
         <ul class="sidebar-items">
-          <li class="sidebar-link">
+          <li class="sidebar-link" onclick="getTableMahasiswa()">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -52,7 +52,7 @@
             </svg>
             <span class="sidebar-text"> Data Mahasiswa </span>
           </li>
-          <li class="sidebar-link">
+          <li class="sidebar-link" onclick="getTableMatkul()">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -71,7 +71,7 @@
             </svg>
             <span class="sidebar-text"> Data Matakuliah </span>
           </li>
-          <li class="sidebar-link">
+          <li class="sidebar-link" onclick="getTableDosen()">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -125,69 +125,6 @@
             <img src="./assets/img/banner/banner-2.jpg" alt="Banner" />
           </div>
         </div>
-      </section>
-      <section id="table-area">
-        <div class="breadcumb">
-          <h1>Data Mahasiswa</h1>
-        </div>
-        <table id="table" class="table-wrap">
-          <thead class="table-head">
-            <tr>
-              <th>Nama</th>
-              <th>Nim</th>
-              <th>Fakultas</th>
-              <th>Prodi</th>
-              <th>Tahun Masuk</th>
-              <th>Aksi</th>
-            </tr>
-          </thead>
-          <tbody class="table-body">
-            <tr>
-              <td>Maulana Sodiqin</td>
-              <td>41037006200028</td>
-              <td>Teknik</td>
-              <td>Informatilka</td>
-              <td>2020</td>
-              <td>
-                <button>Edit</button>
-                <button>Hapus</button>
-              </td>
-            </tr>
-            <tr>
-              <td>Maulana Sodiqin</td>
-              <td>41037006200028</td>
-              <td>Teknik</td>
-              <td>Informatilka</td>
-              <td>2020</td>
-              <td>
-                <button>Edit</button>
-                <button>Hapus</button>
-              </td>
-            </tr>
-            <tr>
-              <td>Maulana Sodiqin</td>
-              <td>41037006200028</td>
-              <td>Teknik</td>
-              <td>Informatilka</td>
-              <td>2020</td>
-              <td>
-                <button>Edit</button>
-                <button>Hapus</button>
-              </td>
-            </tr>
-            <tr>
-              <td>Maulana Sodiqin</td>
-              <td>41037006200028</td>
-              <td>Teknik</td>
-              <td>Informatilka</td>
-              <td>2020</td>
-              <td>
-                <button>Edit</button>
-                <button>Hapus</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
       </section>
     </main>
 
