@@ -55,6 +55,7 @@ const app = Vue.createApp({
         !this.isEditFakultasShow
       );
     },
+
     isTableDosenAppear() {
       return (
         this.isTableShow &&
@@ -69,6 +70,7 @@ const app = Vue.createApp({
         !this.isBannerShow
       );
     },
+
     isTableMatakuliahAppear() {
       return (
         this.isTableShow &&
@@ -82,6 +84,7 @@ const app = Vue.createApp({
         !this.isEditFakultasShow
       );
     },
+
     isTableFakultasAppear() {
       return (
         this.isTableShow &&
@@ -172,7 +175,16 @@ const app = Vue.createApp({
       this.isEditFakultasShow = false;
     },
 
-    getTableMahasiswa() {
+    async getTableMahasiswa() {
+      try {
+        const res = await fetch(
+          "http://localhost/tugas-basis-data/api/mahasiswa/get.php"
+        );
+        const { data } = await res.json();
+        this.dataMahasiswa = data;
+      } catch (error) {
+        console.log(error);
+      }
       this.isTableShow = true;
       this.isTableMahasiswaShow = true;
       this.isTableDosenShow = false;
@@ -185,7 +197,16 @@ const app = Vue.createApp({
       this.isEditFakultasShow = false;
     },
 
-    getTableDosen() {
+    async getTableDosen() {
+      try {
+        const res = await fetch(
+          "http://localhost/tugas-basis-data/api/dosen/get.php"
+        );
+        const { data } = await res.json();
+        this.dataDosen = data;
+      } catch (error) {
+        console.log(error);
+      }
       this.isTableShow = true;
       this.isTableMahasiswaShow = false;
       this.isTableDosenShow = true;
